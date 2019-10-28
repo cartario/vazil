@@ -1,3 +1,27 @@
 body{
 	font-size: 18px;
 }
+
+li{
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+ul {
+	list-style: none;
+}
+
+p{
+	display: block;
+	width: 600px;
+	
+}
+
+p::before{
+	content:"";
+	position: absolute;
+	left: 15px;
+	width: 18px;
+	height: 18px;
+	background-color: red;
+}
