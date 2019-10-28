@@ -30,3 +30,26 @@ ul img{
 	width: 600px;
 }
 
+.menu{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li{
+	margin: 5px;
+	border: none;
+}
+
+.menu a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	background-color: yellow;
+	border-radius: 5px;
+}
+
+.menu a:hover{
+	color: white;
+	background-color: black;
+}
