@@ -25,3 +25,8 @@ p::before{
 	height: 18px;
 	background-color: cyan;
 }
+
+ul img{
+	width: 600px;
+}
+
