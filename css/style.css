@@ -103,10 +103,13 @@ ul {
 }
 
 .breaking-navigation{
+  position: fixed;
+  left: 50%;
   width: 1440px;
   margin: 0 auto;
-  padding: 20px;
-  font-size: 30px;
+  margin-left: -720px;
+  padding: 5px 20px;
+  font-size: 18px;
   text-align: center;
   background-color: orangered;
 }
