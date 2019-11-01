@@ -1,8 +1,20 @@
 body{
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 18px;
 }
 
-main li{
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.daniil-events main li{
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 }
@@ -11,13 +23,13 @@ ul {
 	list-style: none;
 }
 
-p{
+.daniil-events p{
 	display: block;
 	width: 600px;
 	
 }
 
-p::before{
+.daniil-events p::before{
 	content:"";
 	position: absolute;
 	left: 15px;
@@ -26,22 +38,22 @@ p::before{
 	background-color: #fefb95;
 }
 
-ul img{
+.daniil-events ul img{
 	width: 600px;
 }
 
-.menu{
+.daniil-events .menu{
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
 
-.menu li{
+.daniil-events .menu li{
 	margin: 5px;
 	border: none;
 }
 
-.menu a{
+.daniil-events .menu a{
 	padding: 20px;
 	font-size: 20px;
 	text-decoration: none;
@@ -50,20 +62,20 @@ ul img{
 	border-radius: 4px;
 }
 
-.menu a:hover{
+.daniil-events .menu a:hover{
 	color: white;
 	background-color: black;
 }
 
-footer{
+.daniil-events footer{
 	margin: 40px;
 }
 
-.footer-menu a{
+.daniil-events .footer-menu a{
 	background-color: lightgrey;
 }
 
-header .up-button{
+.daniil-events header .up-button{
 	display: block;
 	position: fixed;
 	top: 50%;
@@ -76,4 +88,66 @@ header .up-button{
 	background-color: #02b8d9;
 	border-radius: 4px;
 	opacity: 0.7;
+}
+
+.breaking a{
+  text-decoration: none;
+  color: black;
+}
+
+.breaking a:hover{
+  font-weight: bold;
+  background-color: cyan;
+}
+
+.breaking-navigation{
+  width: 1440px;
+  margin: 0 auto;
+  background-color: orangered;
+}
+
+.breaking-navigation,
+.breaking-navigation a{
+  color: white;
+}
+
+.breaking-navigation ul{
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.container p{
+  padding: 20px 30px;
+}
+
+.gallery img{
+  width: 25%;
+  height: 25%;
+}
+
+.about-me,
+.shedule{
+  background-color: DarkSlateGrey;
+  color: white;
+}
+
+.shedule td{
+  padding: 15px;
+  border: 1px solid #A9E2CC;
+}
+
+.breaking .btn{
+  display: block;
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: tomato;
 }
