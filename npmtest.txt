@@ -1,0 +1,11 @@
+λ npm test
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\Vasiliy\Downloads\cmder\package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\Vasiliy\Downloads\cmder\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Vasiliy\AppData\Roaming\npm-cache\_logs\2019-11-11T20_01_26_327Z-debug.log
