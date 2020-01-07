@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="yandex-verification" content="0a375c7c3d6a75fe" />
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <title>Главная-преглавная</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="0a375c7c3d6a75fe">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <title>Главная-преглавная</title>
   </head>
   <body>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper">
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
           <ul class="site-logo">
             <li class="site-logo__item">
               <a class="page-header__logo" href="index.html">
+                <svg class="page-header__logo-pink-white-desktop" width="160" height="40">
+                  <use xlink:href="#logo-pink-white-desktop"></use>
+                </svg>
+                <svg class="page-header__logo-pink-white-tablet" width="160" height="40">
+                  <use xlink:href="#logo-pink-white-tablet"></use>
+                </svg>
+                <svg class="page-header__logo-pink-white-mobile" width="80" height="30">
+                  <use xlink:href="#logo-pink-white-mobile"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <ul class="site-list">
             <li class="site-list__item--active site-list__item">
-              <a href="daniil.html">Мероприятия ЦД Даниил 2019</a>
+              <a>Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="https://cartario.github.io/1175789-nerds-26/">Nerds</a>
+              <a href="daniil.html">DANIIL</a>
             </li>
             <li class="site-list__item">
-              <a href="https://cartario.github.io/1175789-device-26/">Device</a>
+              <a href="breaking.html">BREAKING</a>
             </li>
             <li class="site-list__item">
-              <a href="breaking.html">Breaking</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy-adaptive.github.io/1175789-pink-18/17/">PINK</a>
-            </li>
+            <a href="https://cartario.github.io/1175789-nerds-26/">Nerds</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://cartario.github.io/1175789-device-26/">Device</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy-adaptive.github.io/1175789-pink-18/13/">PINK</a>
+          </li>
           </ul>
         </div>
       </nav>
-      <script>
-      var navMain=document.querySelector('.main-nav');
-      var navToggle=document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function(){
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      }
-      else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-      });
+    </header>
+    <script src="js/script.js">
     </script>
   </body>
 </html>
