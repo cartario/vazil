@@ -82,9 +82,7 @@
       </section>
       <section class="breaking-gallery"><a name="gallery"></a>
         <h2>Галерея</h2>
-
         <ul class="breaking-gallery__list">
-
           <li class="breaking-gallery__item">
             <img src="img/b01.jpg" width="200" height="200" alt="брейк данс в москве для детей">
           </li>
@@ -95,6 +93,23 @@
             <img src="img/b03.jpg" width="200" height="200" alt="брейк данс в москве для детей">
           </li>
         </ul>
+
+        <div class="slider">
+          <input type="radio" name="toggle" id="btn-1" checked="">
+          <input type="radio" name="toggle" id="btn-2">
+          <input type="radio" name="toggle" id="btn-3">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slider-slides">
+            <img class="slider-slides__img" src="img/b01.jpg">
+            <img class="slider-slides__img" src="img/b02.jpg">
+            <img class="slider-slides__img" src="img/b03.jpg">
+          </div>
+        </div>
+
       </section>
       <section class="breaking-shedule"><a name="shedule"></a>
         <h2>Расписание групповых занятий и цены:</h2>
@@ -156,16 +171,17 @@
       </section>
     </main>
     <footer>
+      <div class="breaking-footer-wrapper">
       <div class="breaking-footer"><a name="contacts"></a>
-      <h2>Контакты</h2>
-        <p class="breaking-footer__contacts"> Я - АКТИВНЫЙ ПОЛЬЗОВАТЕЛЬ СОЦИАЛЬНЫХ СЕТЕЙ. ПОДПИСЫВАЙТЕСЬ!  8 (926) 49 153 49 cartario@yandex.ru
+      <h2>Разработано:</h2>
+        <p class="breaking-footer__contacts">    Василий Зайков © 2020 <br> +7 (926) 49 153 49 <br> cartario@yandex.ru
         </p>
         <ul class="breaking-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/break_msk">
+            <a class="social__link" href="https://vk.com/vasiliyizrossii">
               <span class="visually-hidden">Вконтакте</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
-                    <path fill="#FF0000" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+                    <path fill="#ffffff" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
                     c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
                     c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
                     c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
@@ -187,7 +203,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://instagram.com/break.msk/">
+            <a class="social__link" href="https://instagram.com/vasiliyizrossii/">
               <span class="visually-hidden">Инстаграм</span>
               <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
                   <path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff"></path>
@@ -195,6 +211,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
     <script src="js/script.js">
