@@ -1,0 +1,34 @@
+.daniil-events {
+	width: 660px;
+	min-height: 300px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	background-color: tomato;
+}
+
+.daniil-events__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.daniil-events__item {
+	margin: 25px;
+	padding: 10px;
+	background-color: lightgrey;
+	font-size: 20px;
+}
+
+.daniil-events__item img {
+	width: 100%;
+}
+
+.daniil-events__description {
+	width: 100%;
+	min-height: 50px;
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.8);
+}
