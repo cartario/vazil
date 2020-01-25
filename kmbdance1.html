@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Курс молодого брейкдансера "КМБ-2020, уровень1"</title>
-    <link rel="stylesheet" type="text/css" href="css/style1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/kmbdance1.min.css">
   </head>
   <body>
     <header class="header">
+
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
+        <div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -58,7 +60,9 @@
             </a>
           </li>
         </ul>
+        </div>
       </nav>
+      <div class="header__wrapper">
       <section class="header-intro">
         <h1 class="header-intro__main-title">Курс <br>молодого брейкдансёра</h1>
         <div class="header-intro__title">
@@ -76,6 +80,7 @@
             на голове</span> за 3 месяца, вряд ли получится, но шанс всегда есть, зато ты найдешь <span class="header-intro__flash"> самое идеальное хобби! </span></p>
         </div>
       </section>
+    </div>
     </header>
     <main>
       <section class="about"><a name="about"></a>
@@ -101,7 +106,9 @@
 и терпение!</p>
         </div>
       </section>
-      <section class="processing"><a name="processing"></a>
+      <section class="processing-wrapper">
+        <div class="processing">
+        <a name="processing"></a>
         <h2>Как проходит обучение:</h2>
         <ul class="processing__list">
           <li class="processing__item"><a href="#">тестовое онлайн-задание</a></li>
@@ -109,42 +116,74 @@
           <li class="processing__item">"Если все понравилось, можно оплачивать курс"</li>
           <li class="processing__item">СТАРТ</li>
           <li class="processing__item">2 персональные тренировки</li>
+          <li class="processing__item">Помогают освоить необходимую базу</li>
+          <li class="processing__item">8 групповых тренировок</li>
+          <li class="processing__item">2 персональные тренировки</li>
+          <li class="processing__item">8 групповых тренировок</li>
+          <li class="processing__item">Мастер-класс от bboy/bgirl мирового уровня</li>
+          <li class="processing__item">2 персональные тренировки</li>
+          <li class="processing__item">8 групповых тренировок</li>
+          <li class="processing__item">ЭКЗАМЕН - участие в крупном баттле</li>
+          <li class="processing__item">СЕРТИФИКАТ - по успешному завершению курса</li>
         </ul>
         <p>3 месяца непрерывного обучения</p>
+      </div>
       </section>
       <section class="advantages">
+        <div class="advantages__wrapper">
         <h2>Что вас ждет на обучении</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">30 онлайн-заданий:
+          <li class="advantages__item"><p class="advantages__title">30 онлайн-заданий:</p>
             <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
           </li>
-          <li class="advantages__item">Работа в команде:
+          <li class="advantages__item"><p class="advantages__title">Работа в команде:</p>
             <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
           </li>
-          <li class="advantages__item">Промо-видео:
+          <li class="advantages__item"><p class="advantages__title">Промо-видео:</p>
             <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="for-you">
-        <h2>Подходит ли вам этот курс?</h2>
-          <ul class="for-you__list">
-            <li class="for-you__item">Курс расчитан на новичков. минимальный возраст 6 лет. Для участия необходимо пройти <a href="#" class="for-you__link">тестовое задание</a>
-            </li>
-            <li class="for-you__item">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-            <li class="for-you__item">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</li>
-          </ul>
-          <img src="img/for-you-mobile.jpg" alt="брейкинг для начинающих фото">
+        <div class="for-you__wrapper">
+          <h2>Подходит ли вам этот курс?</h2>
+            <ul class="for-you__list">
+              <li class="for-you__item">Курс расчитан на новичков. минимальный возраст 6 лет. Для участия необходимо пройти <a href="#" class="for-you__link"> тестовое задание</a>
+              </li>
+              <li class="for-you__item">Задания имеют подводящие упражнения, тщательно подобраны, структурированы и имеют несколько уровней сложности</li>
+              <li class="for-you__item">Чтобы успешно пройти курс, требуется настойчивость, трудолюбие и желание, все остальное приложится</li>
+            </ul>
+            <img src="img/for-you-mobile.jpg" alt="брейкинг для начинающих фото">
+          </div>
       </section>
-      <section class="schedule">
-        <h2>Расписание</h2>
+      <section class="schedule-wrapper">
+        <div class="schedule">
+        <h2>Расписание:</h2>
           <ul class="schedule__list">
             <li class="schedule__item">
-              <p>ПН, ЧТ</p>
-              <p>Зал №1</p>
-              <img src="img/location-1-mobile.jpg" alt="Зал№1">
-              <div class="schedule__map schedule__map--1"></div>
-              <p>м.Текстильщики</p>
+              <p class="schedule__day">ПН, ЧТ</p>
+              <p class="schedule__floor">Зал №1</p>
+              <input type="checkbox" id="floor-1" name="floor">
+              <label class="schedule__label" for="floor-1"></label>
+              <div class="schedule__content">
+              hello
+              </div>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__day">СР, ПТ</p>
+              <p class="schedule__floor">Зал №2</p>
+              <input type="checkbox" id="floor-2" name="floor">
+              <label class="schedule__label" for="floor-2"></label>
+              <div class="schedule__content">
+              <img src="img/location-2-mobile.jpg" alt="Зал№2">
+              <div class="schedule__map schedule__map--1">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0558246c5ac986d352bcd164ec0082694d9128e25d07947f43598775edefcba&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
+                <p>м.Текстильщики, м.Кузьминки
+Школа танцев «JeeFox»
+Волгоградский пр.93, к.2</p>
+              </div>
+
               <div class="schedule-group">
                 <h3>Расписание групповых занятий</h3>
                 <ul class="schedule-group__list schedule-group__list--1">
@@ -171,8 +210,18 @@
                   <li class="schedule-person__item">14:00-свободно</li>
                 </ul>
               </div>
+            </div>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__day">ПН, ЧТ</p>
+              <p class="schedule__floor">Зал №3</p>
+              <input type="checkbox" id="floor-3" name="floor">
+              <label class="schedule__label" for="floor-3"></label>
+              <div class="schedule__content">hello3
+              </div>
             </li>
           </ul>
+        </div>
       </section>
       <section class="faq">
         <h2>FAQ</h2>
