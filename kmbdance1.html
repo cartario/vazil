@@ -35,12 +35,12 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">
+            <a href="#faq" class="site-list__link">
               FAQ
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">
+            <a href="#schedule" class="site-list__link">
               Расписание
             </a>
           </li>
@@ -159,95 +159,142 @@
       </section>
       <section class="schedule-wrapper">
         <div class="schedule">
-        <h2>Расписание:</h2>
-          <ul class="schedule__list">
-            <li class="schedule__item">
-              <p class="schedule__day">ПН, ЧТ</p>
-              <p class="schedule__floor">Зал №1</p>
-              <input type="checkbox" id="floor-1" name="floor">
-              <label class="schedule__label" for="floor-1"></label>
-              <div class="schedule__content">
-              hello
-              </div>
-            </li>
+          <a name="schedule"></a>
+          <h2>Расписание:</h2>
+            <ul class="schedule__list">
+              <li class="schedule__item">
+                <p class="schedule__day">ПН, ЧТ</p>
+                <input type="checkbox" id="floor-1" name="floor">
+                <label class="schedule__label" for="floor-1"><p class="schedule__floor">Зал №1</p></label>
+                <div class="schedule__content">
+                hello
+                </div>
+              </li>
             <li class="schedule__item">
               <p class="schedule__day">СР, ПТ</p>
-              <p class="schedule__floor">Зал №2</p>
               <input type="checkbox" id="floor-2" name="floor">
-              <label class="schedule__label" for="floor-2"></label>
+              <label class="schedule__label" for="floor-2"><p class="schedule__floor">Зал №2</p>
+              </label>
               <div class="schedule__content">
-              <img src="img/location-2-mobile.jpg" alt="Зал№2">
-              <div class="schedule__map schedule__map--1">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0558246c5ac986d352bcd164ec0082694d9128e25d07947f43598775edefcba&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
-                <p>м.Текстильщики, м.Кузьминки
-Школа танцев «JeeFox»
-Волгоградский пр.93, к.2</p>
-              </div>
 
-              <div class="schedule-group">
-                <h3>Расписание групповых занятий</h3>
-                <ul class="schedule-group__list schedule-group__list--1">
-                  <li class="schedule-group__item schedule-group__item--day">СРЕДА</li>
-                  <li class="schedule-group__item">18:00-группа №1</li>
-                  <li class="schedule-group__item">19:00-группа №2</li>
-                </ul>
-                <ul class="schedule-group__list schedule-group__list--2">
-                  <li class="schedule-group__item schedule-group__item--day">ПЯТНИЦА</li>
-                  <li class="schedule-group__item">18:00-группа №1</li>
-                  <li class="schedule-group__item">19:00-группа №2</li>
-                </ul>
+                <div class="schedule-group">
+                  <h3>Расписание групповых занятий</h3>
+                  <ul class="schedule-group__list schedule-group__list--1">
+                    <li class="schedule-group__item schedule-group__item--day">СРЕДА</li>
+                    <li class="schedule-group__item">18:00-группа №1</li>
+                    <li class="schedule-group__item">19:00-группа №2</li>
+                  </ul>
+                  <ul class="schedule-group__list schedule-group__list--2">
+                    <li class="schedule-group__item schedule-group__item--day">ПЯТНИЦА</li>
+                    <li class="schedule-group__item">18:00-группа №1</li>
+                    <li class="schedule-group__item">19:00-группа №2</li>
+                  </ul>
+                </div>
+                <div class="schedule-person">
+                  <h3>Расписание персональных занятий</h3>
+                  <ul class="schedule-person__list schedule-person__list--1">
+                    <li class="schedule-person__item schedule-person__item--day">СУББОТА</li>
+                    <li class="schedule-person__item">12:00-свободно</li>
+                    <li class="schedule-person__item">13:00-свободно</li>
+                  </ul>
+                  <ul class="schedule-person__list schedule-person__list--2">
+                    <li class="schedule-person__item schedule-person__item--day">ВОСКРЕСЕНЬЕ</li>
+                    <li class="schedule-person__item">13:00-свободно</li>
+                    <li class="schedule-person__item">14:00-свободно</li>
+                  </ul>
+                </div>
+                <img src="img/location-2-mobile.jpg" alt="Зал№2">
+                <div class="schedule__map schedule__map--1">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0558246c5ac986d352bcd164ec0082694d9128e25d07947f43598775edefcba&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
+                  <p>м.Текстильщики, м.Кузьминки
+                      Школа танцев «JeeFox»
+                            Волгоградский пр.93, к.2</p>
+                </div>
               </div>
-              <div class="schedule-person">
-                <h3>Расписание персональных занятий</h3>
-                <ul class="schedule-person__list schedule-person__list--1">
-                  <li class="schedule-person__item schedule-person__item--day">СУББОТА</li>
-                  <li class="schedule-person__item">12:00-свободно</li>
-                  <li class="schedule-person__item">13:00-свободно</li>
-                </ul>
-                <ul class="schedule-person__list schedule-person__list--2">
-                  <li class="schedule-person__item schedule-person__item--day">ВОСКРЕСЕНЬЕ</li>
-                  <li class="schedule-person__item">13:00-свободно</li>
-                  <li class="schedule-person__item">14:00-свободно</li>
-                </ul>
-              </div>
-            </div>
             </li>
             <li class="schedule__item">
               <p class="schedule__day">ПН, ЧТ</p>
-              <p class="schedule__floor">Зал №3</p>
               <input type="checkbox" id="floor-3" name="floor">
-              <label class="schedule__label" for="floor-3"></label>
+              <label class="schedule__label" for="floor-3"><p class="schedule__floor">Зал №3</p>
+              </label>
               <div class="schedule__content">hello3
               </div>
             </li>
           </ul>
         </div>
+        <div class="adresses">
+          <h2>Адреса залов:</h2>
+          <ul class="adresses__list">
+            <li class="adresses__item">
+              <p class="adresses__metro">м.ВДНХ</p>
+              <input type="checkbox" id="adresses-1" name="adresses">
+              <label class="adresses__label " for="adresses-1"><p class="adresses__floor">Зал №1</p></label>
+              <div class="adresses__content">
+                hello1
+              </div>
+            </li>
+            <li class="adresses__item">
+              <p class="adresses__metro">м.Кузьминки</p>
+              <input type="checkbox" id="adresses-2" name="adresses">
+              <label class="adresses__label " for="adresses-2"><p class="adresses__floor">Зал №2</p></label>
+              <div class="adresses__content">
+                <img src="img/location-2-mobile.jpg" alt="Зал№2">
+                <div class="adresses__map adresses__map--1">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0558246c5ac986d352bcd164ec0082694d9128e25d07947f43598775edefcba&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
+                  <p>м.Текстильщики, м.Кузьминки
+                      Школа танцев «JeeFox»
+                            Волгоградский пр.93, к.2</p>
+                </div>
+              </div>
+            </li>
+            <li class="adresses__item">
+              <p class="adresses__metro">м.Бибирево</p>
+              <input type="checkbox" id="adresses-3" name="adresses">
+              <label class="adresses__label " for="adresses-3"><p class="adresses__floor">Зал №3</p></label>
+              <div class="adresses__content">
+                hello3
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="faq">
+      <section class="faq-wrapper"><a name="faq"></a>
+        <div class="faq">
         <h2>FAQ</h2>
-        <ul class="faq__list">
-          <li class="faq__item">Со скольки лет берете?
-            <div class="faq__answer">
+        <ul class="faq__list tabs">
+          <li class="faq__item tab">
+            <input type="checkbox" id="faq1" name="faq">
+            <label class="faq__label tab-label" for="faq1">
+            Со скольки лет берете?</label>
+            <div class="faq__answer tab-content">
               Минимальный возраст 6 лет
             </div>
           </li>
-          <li class="faq__item">В чем приходить на занятия?
-            <div class="faq__answer">
-              Минимальный возраст 6 лет
+          <li class="faq__item tab">
+            <input type="checkbox" id="faq2" name="faq">
+            <label class="faq__label tab-label" for="faq2">В чем приходить на занятия?</label>
+            <div class="faq__answer tab-content">
+              Брейк-данс лучше всего танцевать в удобной спортивной одежде и чистых кроссовках, как на физкультуру - тоже подойдет.
             </div>
           </li>
-          <li class="faq__item">Безопасен ли брейк данс?
-            <div class="faq__answer">
-              Минимальный возраст 6 лет
+          <li class="faq__item tab">
+            <input type="checkbox" id="faq3" name="faq">
+            <label class="faq__label tab-label" for="faq3">
+            Безопасен ли брейк данс?</label>
+            <div class="faq__answer tab-content">
+              На занятиях акцент делается на технике безопасности, главное слушать тренера и риск травмироваться будет минимальный.
             </div>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="test-task">
-        <h2>Курс молодого брейкдансера</h2>
-        <p>"КМБ-2020, уровень 1"</p>
-        <button class="test-task__toggle toggle" type="button">Пройти тестовое задание
-        </button>
+      <section class="test-task-wrapper">
+        <div class="test-task">
+          <h2>Курс молодого <br> брейкдансера</h2>
+          <p>"КМБ-2020, уровень 1"</p>
+          <a href="#" class="test-task__toggle toggle">Пройти тестовое задание
+        </a>
+        </div>
       </section>
     </main>
     <footer class="footer">
