@@ -230,12 +230,44 @@
           <h2>Расписание:</h2>
             <ul class="schedule__list">
               <li class="schedule__item">
-                <p class="schedule__day">ПН, ЧТ</p>
+                <p class="schedule__day">ПН, СР</p>
                 <input type="checkbox" id="floor-1" name="floor">
                 <label class="schedule__label" for="floor-1"><p class="schedule__floor">Зал №1</p></label>
                 <div class="schedule__content">
-                hello
+
+                <div class="schedule-group">
+                  <h3>Расписание групповых занятий</h3>
+                  <ul class="schedule-group__list schedule-group__list--1">
+                    <li class="schedule-group__item schedule-group__item--day">ПОНЕДЕЛЬНИК</li>
+                    <li class="schedule-group__item">19:00-группа №1</li>
+
+                  </ul>
+                  <ul class="schedule-group__list schedule-group__list--2">
+                    <li class="schedule-group__item schedule-group__item--day">СРЕДА</li>
+                    <li class="schedule-group__item">19:00-группа №1</li>
+
+                  </ul>
                 </div>
+                <div class="schedule-person">
+                  <h3>Расписание персональных занятий</h3>
+                  <ul class="schedule-person__list schedule-person__list--1">
+                    <li class="schedule-person__item schedule-person__item--day">ПОНЕДЕЛЬНИК
+                    </li>
+                    <li class="schedule-person__item">20:00-свободно</li>
+                    <li class="schedule-person__item">21:00-свободно</li>
+                  </ul>
+
+                </div>
+                <img src="img/location-1.webp" alt="Зал№1">
+                <div class="schedule__map schedule__map--1">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab95ab9ca61a21f1910dbd43547caeda96960cd8b20b4ceb0d8479ecd49d42e2f&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
+                  <p>м.ВДНХ
+                      Школа танцев «InstyleDance»
+                            ул.Павла Корчагина, 1а</p>
+                </div>
+
+              </div>
+
               </li>
             <li class="schedule__item">
               <p class="schedule__day">СР, ПТ</p>
@@ -299,7 +331,13 @@
               <input type="checkbox" id="adresses-1" name="adresses">
               <label class="adresses__label " for="adresses-1"><p class="adresses__floor">Зал №1</p></label>
               <div class="adresses__content">
-                hello1
+                <img src="img/location-1.webp" width="271" alt="Зал№1">
+                <div class="adresses__map adresses__map--1">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab95ab9ca61a21f1910dbd43547caeda96960cd8b20b4ceb0d8479ecd49d42e2f&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
+                  <p>м.ВДНХ
+                      Школа танцев «InstyleDance»
+                            ул.Павла Корчагина, 1а</p>
+                </div>
               </div>
             </li>
             <li class="adresses__item">
@@ -398,8 +436,8 @@
           <p>Звони, пиши в WhatsAPP
           +7-926-491-53-49</p>
           <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#breadcrumbs">Тренерам - "Крошка хлеба"</a>
-            </li>
+
+            
             <li class="footer-nav__item"><a class="footer-nav__link" href="kmbdancetask.html">Тестовое задание</a>
             </li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#schedule">Расписание</a>
@@ -413,7 +451,8 @@
             </li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#faq">FAQ</a>
             </li>
-          </ul>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#breadcrumbs">Тренерам</a>
+          </li></ul>
         </div>
           <div class="copyright-wrapper">
             <div class="copyright">
