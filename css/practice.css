@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+.chapter {
+	width: 1000px;
+	min-height: 250px;
+	margin: 10px;
+	padding: 10px;
+	background-color: lightgrey;
+}
+
+.block-modal-test {
+	position: relative;
+	width: 250px;
+	height: 340px;
+	margin: 100px auto;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.form-slider {
+	width: 500px;
+	height: 340px;
+	margin-left: 0px;
+	background-color: bisque;
+	transition: 1s ease all;
+}
+
+.left-50, .right-50 {
+	float: left;
+	width: 50%;
+	min-height: 50px;
+	padding: 10px;
+	background: red;
+}
+
+.right-50 {
+	max-height: 340px;
+	overflow-y: scroll;
+	background: green;
+}
+
+.read-rules, .read-rules-back {
+	color: white;
+	cursor: pointer;
+}
+
+
