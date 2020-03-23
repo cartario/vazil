@@ -63,10 +63,20 @@ console.log(shuffle(arr));
 })();
 
 (function () {
-
+	let blockModalTest = document.querySelector('.block-modal-test');
 	let rules = document.querySelector('.read-rules');
 	let formSlider = document.querySelector('.form-slider');
 	let readRulesBack = document.querySelectorAll('.read-rules-back');
+	let modalShow = document.querySelector('.modal-show');
+	let modalHide = document.querySelector('.modal-hide');
+
+	let hide = function () {
+		blockModalTest.style.display = 'none';
+	};
+
+	let show = function () {
+		blockModalTest.style.display = 'block';
+	};
 
 	let onClickRules = function () {
 		formSlider.style.marginLeft = '-250px';
@@ -80,6 +90,9 @@ console.log(shuffle(arr));
 			formSlider.style.marginLeft = '0px';
 		})
 	}
+
+	modalHide.onclick = hide;
+	modalShow.onclick = show;
 	
 
 })();
