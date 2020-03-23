@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-.chapter {
+.chapter, .block-this {
 	width: 1000px;
 	min-height: 250px;
 	margin: 10px;

@@ -96,3 +96,34 @@ console.log(shuffle(arr));
 	
 
 })();
+
+(function () {
+	let btn = document.querySelector('.block-this__btn-1');
+	let someText = document.querySelectorAll('.block-this__text');
+
+	let changeColor = function () {
+		this.style.background = 'tomato';
+	};
+
+	for (let i = 0; i < someText.length; i++) {
+		someText[i].addEventListener('click', changeColor);
+	}
+
+	btn.addEventListener('click', changeColor);
+
+	let U2 = function (model) {
+		this.model = model;
+
+		this.showThis = function () {
+			console.log(this.model);
+		};
+	};
+
+	let boat = new U2 ('744');
+	let boat2 = new U2 ('555');
+
+	boat.showThis();
+	boat2.showThis();
+	
+
+})();
