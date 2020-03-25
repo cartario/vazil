@@ -6,3 +6,12 @@
 	font-size: 22px;
 	background: tomato;
 }
+
+.javascript__item:hover {
+	background: green;
+}
+
+.javascript__item a {
+	padding: 50px;
+	color: white;
+}
