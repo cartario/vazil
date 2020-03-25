@@ -7,7 +7,7 @@
 	let messageOk = document.querySelector('.message--ok');
 
 	buttonPushBot.onclick = function () {
-		let message = inputBot.value;
+		let message = inputBot.value + ' [прыщага]';
 		const token = '1096692113:AAHluOUmf6iDGJSB0muNDZd_V5Wl1wpWWiY';
 		const url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=-389628606&text=';
 		let xhttp = new XMLHttpRequest();
@@ -38,4 +38,7 @@
 	//https://api.telegram.org/bot1096692113:AAHluOUmf6iDGJSB0muNDZd_V5Wl1wpWWiY/getUpdates
 
 	//https://api.telegram.org/bot1096692113:AAHluOUmf6iDGJSB0muNDZd_V5Wl1wpWWiY/sendMessage?chat_id=-389628606&text=hi_i_am_bot
+
+	//https://api.whatsapp.com/send?phone=79264915349&text=&source=&data=
+
 })();
