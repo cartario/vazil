@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-.chapter, .block-this {
+.block {
 	width: 1000px;
 	min-height: 250px;
 	margin: 10px;
@@ -12,6 +12,7 @@
 
 .block-modal-test {
 	position: relative;
+	display: none;
 	width: 250px;
 	height: 340px;
 	margin: 100px auto;
@@ -45,5 +46,32 @@
 	color: white;
 	cursor: pointer;
 }
+
+.block-range__cont {
+	position: relative;
+	width: 300px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid grey;*/
+}
+
+.block-range__cont input {
+	position: absolute;
+	bottom: 0px;
+	width: 300px;
+}
+
+.block-range__text {
+	position: absolute;
+	left: 136px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	/*border: 1px solid grey;*/
+	background: tomato;
+}
+
 
 

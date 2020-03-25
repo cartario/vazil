@@ -127,3 +127,19 @@ console.log(shuffle(arr));
 	
 
 })();
+
+(function () {
+
+let inputRange = document.querySelector('.block-range__cont input[type="range"]');
+let textOut = document.querySelector('.block-range__text');
+
+textOut.textContent = inputRange.value;
+
+inputRange.addEventListener('input', function(){
+	textOut.style.left = inputRange.value - 14*(1 + inputRange.value*0.001) + 'px';
+
+	textOut.textContent = inputRange.value;
+});
+
+
+})();
