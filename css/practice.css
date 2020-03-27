@@ -83,5 +83,21 @@
 	background: tomato;
 }
 
+.call-apply-bind__button {
+	width: 200px;
+	height: 60px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	background-color: orange;
+	border-radius: 15px;
+	border: 2px solid black;
+}
 
+.call-apply-bind__button:hover {
+	background-color: cyan;
+}
 
+.call-apply-bind__button:active {
+	opacity: 0.3;
+}

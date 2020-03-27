@@ -37,7 +37,7 @@
 		return arr;
 	};
 	
-	console.log(randomShuffleArr(arr));
+	// console.log(randomShuffleArr(arr));
 
 	function shuffle(arr){
 		var j, temp;
@@ -58,7 +58,7 @@
 		return arr;
 	};
 
-console.log(shuffle(arr));
+// console.log(shuffle(arr));
 		
 })();
 
@@ -115,7 +115,7 @@ console.log(shuffle(arr));
 		this.model = model;
 
 		this.showThis = function () {
-			console.log(this.model);
+			// console.log(this.model);
 		};
 	};
 
@@ -144,3 +144,27 @@ inputRange.addEventListener('input', function(){
 
 })();
 
+(function () {
+	let btn1 = document.querySelector('.call-apply-bind__b1');
+	let btn2 = document.querySelector('.call-apply-bind__b2');
+	let btn3 = document.querySelector('.call-apply-bind__b3');
+	let out = document.querySelector('.call-apply-bind__out');
+
+	function changeColor (color, name, age) {
+		this.style.backgroundColor = color;
+		let outInfo = 'My name is ' + name + ' .My age is ' + age + ' My color is ' + color;
+		out.textContent = outInfo;
+	};
+
+	btn1.onclick = function () {
+		changeColor.call(btn1, 'red', 'artem', 28);
+	};
+
+ 	let g =  changeColor.bind(btn2, 'green', 'stepan', 25);
+ 	btn2.onclick = g;
+
+	btn3.onclick = function () {
+		changeColor.apply(btn3, ['yellow', 'ivan', 26]);
+	};
+
+})();
