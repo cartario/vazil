@@ -198,7 +198,19 @@ inputRange.addEventListener('input', function(){
 	}
 
 	toggleCanva.onclick = toggle;
+
+	let cssToggle = function () {
+		let cbx = document.querySelector('.cbx');
+		let toggleOut = document.querySelector('.toggle-out');
+		let n = 0;
+
+		cbx.addEventListener('change', function (evt) {
+			if (evt.target.checked) {
+				n = n + 1;
+				toggleOut.textContent = `Чекбокс был включен ${n} раз`;
+			}
+		})
+	}
 	
-
-
+	cssToggle();
 })();
