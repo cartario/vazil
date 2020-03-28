@@ -101,3 +101,41 @@
 .call-apply-bind__button:active {
 	opacity: 0.3;
 }
+
+.toggle-canva {
+	position: relative;
+	width: 50px;
+	height: 30px;
+	border-radius: 15px;
+	transition: 1s all ease;
+}
+
+.toggle-canva--off {
+	background-color: grey;
+}
+
+.toggle-canva--on {
+	background-color: green;
+}
+
+.toggle-circle {
+	position: absolute;
+	top: 2px;
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border-radius: 50%;
+	
+}
+
+.toggle-circle--off {
+	left: 2px;
+}
+
+.toggle-circle--on {
+	right: 2px;
+}
+
+.toggle-text {
+	display: none;
+}

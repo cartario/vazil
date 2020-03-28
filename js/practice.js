@@ -168,3 +168,37 @@ inputRange.addEventListener('input', function(){
 	};
 
 })();
+
+(function () {
+
+	let toggleCanva = document.querySelector('.toggle-canva');
+	let toggleCircle = document.querySelector('.toggle-circle');
+	let toggleText = document.querySelector('.toggle-text');
+
+	let toggle = function () {
+
+		if (toggleCanva.classList.contains('toggle-canva--on')) {
+			toggleCanva.classList.remove('toggle-canva--on');
+			toggleCanva.classList.add('toggle-canva--off');
+			toggleText.style.display = 'block';
+		} else {
+			toggleCanva.classList.remove('toggle-canva--off');
+			toggleCanva.classList.add('toggle-canva--on');
+			toggleText.style.display = 'none';
+		}
+
+		if (toggleCircle.classList.contains('toggle-circle--on')) {
+			toggleCircle.classList.remove('toggle-circle--on');
+			toggleCircle.classList.add('toggle-circle--off');
+		} else {
+			toggleCircle.classList.remove('toggle-circle--off');
+			toggleCircle.classList.add('toggle-circle--on');
+		}
+
+	}
+
+	toggleCanva.onclick = toggle;
+	
+
+
+})();
